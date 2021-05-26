@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "ESNext",
+        "lib": ["ESNext"],
+        "noEmit": true,
+        "moduleResolution": "Node",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}

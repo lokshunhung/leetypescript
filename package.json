@@ -1,0 +1,17 @@
+{
+    "name": "@lokshunhung/leetypescript",
+    "version": "0.0.1",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "watch": "tsc --watch"
+    },
+    "devDependencies": {
+        "@type-challenges/utils": "0.1.1",
+        "typescript": "4.2.4"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "requirePragma": true
+    }
+}
