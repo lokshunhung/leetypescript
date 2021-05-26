@@ -5,6 +5,7 @@
         "lib": ["ESNext"],
         "noEmit": true,
         "moduleResolution": "Node",
+        "isolatedModules": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true
     }
