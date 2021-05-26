@@ -39,6 +39,12 @@ type IsSnakeCaseImpl<
         : true
 ;
 
+/**
+ * Returns true if `T` is in snake case:
+ * - must begin with lowercase
+ * - can contain lowercase, numbers, `_`
+ * - must not end with `_`
+ */
 export type IsSnakeCase<T extends string> =
     IsSnakeCaseImpl<T>
 ;
