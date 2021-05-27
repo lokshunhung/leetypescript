@@ -20,8 +20,8 @@ type TestCases = [
     >>,
 
     Expect<Equal<
-        Concat<['1', 2, '3'], [false, boolean, '4']>,
-        ['1', 2, '3', false, boolean, '4']
+        Concat<["1", 2, "3"], [false, boolean, "4"]>,
+        ["1", 2, "3", false, boolean, "4"]
     >>,
 
     Expect<Equal<

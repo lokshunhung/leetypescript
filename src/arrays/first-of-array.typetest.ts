@@ -1,5 +1,5 @@
-import { Equal, Expect } from '@type-challenges/utils'
-import { First } from './first-of-array';
+import { Equal, Expect } from "@type-challenges/utils";
+import { First } from "./first-of-array";
 
 export {};
 

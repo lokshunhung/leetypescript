@@ -20,13 +20,15 @@ interface Expected2 {
 
 type TestCases = [
     Expect<Equal<
-        Expected1, MyPick<Todo, 'title'>
+        MyPick<Todo, "title">,
+        Expected1
     >>,
 
     Expect<Equal<
-        Expected2, MyPick<Todo, 'title' | 'completed'>
+        MyPick<Todo, "title" | "completed">,
+        Expected2
     >>,
 
     // @ts-expect-error
-    MyPick<Todo, 'title' | 'completed' | 'invalid'>,
+    MyPick<Todo, "title" | "completed" | "invalid">,
 ];
