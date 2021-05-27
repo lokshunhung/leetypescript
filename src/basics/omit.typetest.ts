@@ -1,6 +1,8 @@
 import { Equal, Expect } from "@type-challenges/utils";
 import { MyOmit } from "./omit";
 
+export {};
+
 interface Todo {
     title: string;
     description: string;
