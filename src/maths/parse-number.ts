@@ -19,7 +19,7 @@ export type ParseNumber<T extends string, O extends any[] = []> =
     T extends `${infer Head}${infer Tail}`
         ? Head extends `${Digit}`
             ? Tail extends ""
-                ? [...O, DigitMap[Head]]
+                ? Cast<[...O, DigitMap[Head]], Digit[]>
                 : ParseNumber<Tail, [...O, DigitMap[Head]]>
             : never
         : never
