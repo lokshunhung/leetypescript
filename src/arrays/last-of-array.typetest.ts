@@ -19,7 +19,7 @@ type TestCases = [
 
     Expect<Equal<
         Last<[boolean, ...number[]]>,
-        number
+        boolean | number
     >>,
     Expect<Equal<
         Last<[...number[], string]>,
@@ -32,7 +32,7 @@ type TestCases = [
 
     Expect<Equal<
         Last<[boolean, () => void, ...number[]]>,
-        number
+        (() => void) | number
     >>,
     Expect<Equal<
         Last<[...number[], () => void, string]>,
@@ -44,19 +44,20 @@ type TestCases = [
     >>,
 
     Expect<Equal<
-        Last<[boolean, symbol, number | string]>,
-        number | string
-    >>,
-    Expect<NotEqual<
-        Last<[boolean, symbol, number | string]>,
-        string
+        Last<[boolean, number, string | symbol]>,
+        string | symbol
     >>,
     Expect<Equal<
-        Last<[boolean, string, ...Array<number | string>]>,
-        number | string
+        Last<[boolean, number, ...Array<string | symbol>]>,
+        number | string | symbol
+    >>,
+
+    Expect<NotEqual<
+        Last<[boolean, number, ...string[]]>,
+        string
     >>,
     Expect<NotEqual<
-        Last<[boolean, string, ...Array<number | string>]>,
-        string
+        Last<[boolean, number, ...Array<string | symbol>]>,
+        string | symbol
     >>,
 ];
