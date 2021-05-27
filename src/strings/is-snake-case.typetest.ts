@@ -44,6 +44,9 @@ type TestCases = [
         IsSnakeCase<"abc__def">
     >,
     ExpectFalse<
+        IsSnakeCase<"abc__123">
+    >,
+    ExpectFalse<
         IsSnakeCase<"abc_">
     >,
     ExpectFalse<

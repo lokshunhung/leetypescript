@@ -8,18 +8,23 @@ type IsSnakeCaseImpl<
 > =
     T extends `${infer Head}${infer Tail}`
         ? {
-            // 0: check if lowercase; else fail
-            0: Head extends Lower
+            0: // check if lowercase; else fail
+            Head extends Lower
                 ? IsSnakeCaseImpl<Tail, 1, 1>
-                : false;
-            // 1: check if lowercase | numeric; else fail
-            1: Head extends Lower | Numeric
+                : false
+            ;
+
+            1: // check if lowercase | numeric; else fail
+            Head extends Lower | Numeric
                 ? IsSnakeCaseImpl<Tail, 1, 1>
-                : false;
-            // 2: check if underscore; else re-fallthrough w/o underscore
-            2: Head extends "_"
+                : false
+            ;
+
+            2: // check if underscore; else re-fallthrough w/o underscore
+            Head extends "_"
                 ? IsSnakeCaseImpl<Tail, 0, 1>
-                : IsSnakeCaseImpl<T, 0, N>;
+                : IsSnakeCaseImpl<T, 0, N>
+            ;
         }[
             // if is_last_char {
             //     # disallow_underscore
@@ -44,6 +49,7 @@ type IsSnakeCaseImpl<
  * - must begin with lowercase
  * - can contain lowercase, numbers, `_`
  * - must not end with `_`
+ * - must not have consecutive `_`
  */
 export type IsSnakeCase<T extends string> =
     IsSnakeCaseImpl<T>
