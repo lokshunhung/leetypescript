@@ -24,7 +24,7 @@ export type Dec<T extends Digit[], O extends Digit[] = []> =
                     : Unit extends 0 ? O extends [] ? [0] : O : [Unit, ...O]
                 : Borrow extends 1
                     ? Dec<Cast<Init, Digit[]>, [Cast<Unit, Digit>, ...O]>
-                    : [...Init, Unit, ...O]
+                    : [...Cast<Init, Digit[]>, Unit, ...O]
             : never
         : never
 ;

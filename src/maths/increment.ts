@@ -23,7 +23,7 @@ export type Inc<T extends Digit[], O extends Digit[] = []> =
                     ? [Unit, ...O]
                     : [Carry, Unit, ...O]
                 : Carry extends 0
-                    ? [...Init, Unit, ...O]
+                    ? [...Cast<Init, Digit[]>, Unit, ...O]
                     : Inc<Cast<Init, Digit[]>, [Cast<Unit, Digit>, ...O]>
             : never
         : never
