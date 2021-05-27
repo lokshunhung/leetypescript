@@ -37,11 +37,6 @@ type TestCase = [
         Add<[6, 1], [4, 2]>,
         [1, 0, 3]
     >>,
-    // This should fail?
-    Expect<Equal<
-        Add<[6, 1], [4, 3]>,
-        [1, 0, 4]
-    >>,
 
     Expect<NotEqual<
         Add<[1], [1]>,
