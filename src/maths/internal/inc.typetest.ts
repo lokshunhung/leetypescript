@@ -1,5 +1,5 @@
 import { Equal, Expect, NotEqual } from "@type-challenges/utils";
-import { Inc } from "./increment";
+import { Inc } from "./inc";
 
 export {};
 

@@ -1,5 +1,5 @@
 import { Equal, Expect, NotEqual } from "@type-challenges/utils";
-import { Add } from "./addition";
+import { Add } from "./add";
 
 type TestCase = [
     Expect<Equal<

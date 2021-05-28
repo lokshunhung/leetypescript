@@ -1,23 +1,23 @@
 import { Equal, Expect } from "@type-challenges/utils";
-import { ParseNumber } from "./parse-number";
+import { Parse } from "./parse";
 
 export {};
 
 type TestCases = [
     Expect<Equal<
-        ParseNumber<"">,
+        Parse<"">,
         never
     >>,
     Expect<Equal<
-        ParseNumber<"1">,
+        Parse<"1">,
         [1]
     >>,
     Expect<Equal<
-        ParseNumber<"12">,
+        Parse<"12">,
         [1, 2]
     >>,
     Expect<Equal<
-        ParseNumber<"456789">,
+        Parse<"456789">,
         [4, 5, 6, 7, 8, 9]
     >>,
 ];

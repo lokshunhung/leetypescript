@@ -1,5 +1,5 @@
 import { Equal, Expect, NotEqual } from "@type-challenges/utils";
-import { AddStrings } from "./add";
+import { AddStrings } from "./add-strings";
 
 export {};
 

@@ -15,12 +15,15 @@ type DigitMap =
     }
 ;
 
-export type ParseNumber<T extends string, O extends any[] = []> =
+/**
+ * Parse a string containing numeric to a digit array.
+ */
+export type Parse<T extends string, O extends any[] = []> =
     T extends `${infer Head}${infer Tail}`
         ? Head extends `${Digit}`
             ? Tail extends ""
                 ? Cast<[...O, DigitMap[Head]], Digit[]>
-                : ParseNumber<Tail, [...O, DigitMap[Head]]>
+                : Parse<Tail, [...O, DigitMap[Head]]>
             : never
         : never
 ;
