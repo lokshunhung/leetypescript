@@ -39,4 +39,9 @@ type TestCases = [
         LookUp<LivingThings, "flower" | "tree">,
         Plant
     >>,
+
+    // @ts-expect-error
+    LookUp<{ noTypeProperty: Error }, string>,
+    // @ts-expect-error
+    LookUp<{ type: "LookUp 2nd type argument not string" }, 1>
 ];
