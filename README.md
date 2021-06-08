@@ -31,7 +31,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 108 Trim (merged to Custom/Strings/Trim)  
 110 Capitalize  
 [116 Replace](./src/strings/replace-once.ts)  
-119 ReplaceAll  
+[119 ReplaceAll](./src/strings/replace-all.ts)  
 191 Append Argument  
 296 Permutation  
 [298 Length of String](./src/strings/length-of-string.ts)  
