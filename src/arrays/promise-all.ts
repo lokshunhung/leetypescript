@@ -5,11 +5,15 @@ type AwaitAll<T extends any[]> =
         ? Head extends Promise<infer R>
             ? [R, ...AwaitAll<Tail>]
             : [Head, ...AwaitAll<Tail>]
-        : T extends []
-            ? T
-            : T extends Array<Promise<infer E>>
-                ? Array<E>
-                : T
+        : T extends [...infer Init, infer Last]
+            ? Last extends Promise<infer R>
+                ? [...AwaitAll<Init>, R]
+                : [...AwaitAll<Init>, Last]
+            : T extends []
+                ? T
+                : T extends Array<Promise<infer E>>
+                    ? Array<E>
+                    : T
 ;
 
 // Note: Using variadic tuple types in function parameters is only available for TS4.0+, see: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-0.html#variadic-tuple-types
