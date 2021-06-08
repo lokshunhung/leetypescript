@@ -38,7 +38,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 459 Flatten  
 527 Append to object  
 529 Absolute  
-531 String to Union  
+[531 String to Union](./src/strings/string-to-union.ts)  
 599 Merge  
 610 CamelCase  
 612 KebabCase  
