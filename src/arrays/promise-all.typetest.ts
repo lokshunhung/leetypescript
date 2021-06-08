@@ -46,15 +46,15 @@ type TestCases_SpreadTuples = [
     >>,
 ];
 
-const p7Tail = [Promise.resolve(true), false];
+const p7Tail = [Promise.resolve(true), "false", false];
 const promiseAllTest7 = PromiseAll([1, Promise.resolve(2), ...p7Tail]);
 
-const p8Init = [Promise.resolve(1), 2, Promise.resolve(3)];
+const p8Init = [Promise.resolve(1), [true, false], Promise.resolve(3)];
 const promiseAllTest8 = PromiseAll([...p8Init, "four", Promise.resolve("five")]);
 
-const p9Mid = [Promise.resolve(true), "false", Promise.resolve({ p: false })];
+const p9Mid = [Promise.resolve(true), { 5: "five" }, Promise.resolve({ p: false })];
 const promiseAllTest9 = PromiseAll([
-    Promise.resolve(true), "two", Promise.resolve(3),
+    Promise.resolve(1), "two", Promise.resolve(3),
     ...p9Mid,
     Promise.resolve(Symbol("seven")), () => {}, Symbol("nine"),
 ]);
@@ -62,17 +62,17 @@ const promiseAllTest9 = PromiseAll([
 type TestCases_SpreadTuplesMixed = [
     Expect<Equal<
         typeof promiseAllTest7,
-        Promise<[number, number, ...boolean[]]>
+        Promise<[number, number, ...(boolean | string)[]]>
     >>,
     Expect<Equal<
         typeof promiseAllTest8,
-        Promise<[...number[], string, string]>
+        Promise<[...(number | boolean[])[], string, string]>
     >>,
     Expect<Equal<
         typeof promiseAllTest9,
         Promise<[
-            boolean, string, number,
-            ...(boolean | string | { p: boolean })[],
+            number, string, number,
+            ...(boolean | { 5: string } | { p: boolean })[],
             symbol, () => void, symbol
         ]>
     >>,
