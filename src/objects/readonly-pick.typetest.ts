@@ -1,5 +1,5 @@
 import { Alike, Expect } from "@type-challenges/utils";
-import { MyReadonly2 } from "./readonly-2";
+import { ReadonlyPick } from "./readonly-pick";
 
 export {};
 
@@ -23,18 +23,18 @@ interface Expected {
 
 type TestCases = [
     Expect<Alike<
-        MyReadonly2<Todo1>,
+        ReadonlyPick<Todo1>,
         Readonly<Todo1>
     >>,
     Expect<Alike<
-        MyReadonly2<Todo1, "title" | "description">,
+        ReadonlyPick<Todo1, "title" | "description">,
         Expected
     >>,
     Expect<Alike<
-        MyReadonly2<Todo2, "title" | "description">,
+        ReadonlyPick<Todo2, "title" | "description">,
         Expected
     >>,
 
     // @ts-expect-error
-    MyReadonly2<Todo1, "notExistsProp">,
+    ReadonlyPick<Todo1, "notExistsProp">,
 ];

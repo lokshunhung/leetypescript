@@ -2,7 +2,7 @@
 
 // Note: Using key remapping in mapped types is only for TS4.1+, see: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-1.html#key-remapping-in-mapped-types
 // Also: `type MyReadonly2<T, K extends keyof T = keyof T> = Readonly<Pick<T, K>> & Omit<T, K>;` with the `Readonly`, `Pick`, `Omit` helper
-export type MyReadonly2<T, K extends keyof T = keyof T> =
+export type ReadonlyPick<T, K extends keyof T = keyof T> =
     {
         +readonly [Key in keyof T as Key extends K ? Key : never]: T[Key];
     } & {
