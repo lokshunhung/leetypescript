@@ -25,7 +25,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [12 Chainable Options](./src/objects/chainable-options.ts)  
 [15 Last of Array](./src/arrays/last-of-array-barebones.ts)  
 [16 Pop](./src/arrays/pop.ts)  
-[20 Promise.all](./src/arrays/promise-all.ts)  
+20 Promise.all
 [62 Type Lookup](./src/objects/type-lookup.ts)  
 106 Trim Left (merged to Custom/Strings/Trim)  
 108 Trim (merged to Custom/Strings/Trim)  
@@ -94,6 +94,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 ### Arrays
 [First of array strict](./src/arrays/first-of-array-strict.ts)  
 [Last of array strict](./src/arrays/last-of-array-strict.ts)  
+[Promise.all strict](./src/arrays/promise-all-strict.ts)
 [Reverse](./src/arrays/reverse.ts)  
 
 ### Basics

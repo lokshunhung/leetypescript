@@ -19,7 +19,7 @@ type AwaitAll<T extends any[]> =
 ;
 
 // Note: Using variadic tuple types in function parameters is only available for TS4.0+, see: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-0.html#variadic-tuple-types
-export declare function PromiseAll<
+export declare function PromiseAllStrict<
     T extends any[]
 >(values: readonly [...T]):
     Promise<AwaitAll<T>>

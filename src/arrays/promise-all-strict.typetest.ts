@@ -1,11 +1,11 @@
 import { Equal, Expect } from "@type-challenges/utils";
-import { PromiseAll } from "./promise-all";
+import { PromiseAllStrict } from "./promise-all-strict";
 
 export {};
 
-const promiseAllTest1 = PromiseAll([1, 2, 3] as const);
-const promiseAllTest2 = PromiseAll([1, 2, Promise.resolve(3)] as const);
-const promiseAllTest3 = PromiseAll([1, 2, Promise.resolve(3)]);
+const promiseAllTest1 = PromiseAllStrict([1, 2, 3] as const);
+const promiseAllTest2 = PromiseAllStrict([1, 2, Promise.resolve(3)] as const);
+const promiseAllTest3 = PromiseAllStrict([1, 2, Promise.resolve(3)]);
 
 type TestCases = [
     Expect<Equal<
@@ -23,13 +23,13 @@ type TestCases = [
 ];
 
 const p4Tail = [Promise.resolve(true), Promise.resolve(false)];
-const promiseAllTest4 = PromiseAll([1, Promise.resolve(2), ...p4Tail]);
+const promiseAllTest4 = PromiseAllStrict([1, Promise.resolve(2), ...p4Tail]);
 
 const p5Init = [Promise.resolve(true), Promise.resolve(false)];
-const promiseAllTest5 = PromiseAll([...p5Init, 3, Promise.resolve(4)]);
+const promiseAllTest5 = PromiseAllStrict([...p5Init, 3, Promise.resolve(4)]);
 
 const p6Mid = [Promise.resolve(true), Promise.resolve(false)];
-const promiseAllTest6 = PromiseAll(["one", Promise.resolve("two"), ...p6Mid, 5, Promise.resolve(6)]);
+const promiseAllTest6 = PromiseAllStrict(["one", Promise.resolve("two"), ...p6Mid, 5, Promise.resolve(6)]);
 
 type TestCases_SpreadTuples = [
     Expect<Equal<
@@ -47,13 +47,13 @@ type TestCases_SpreadTuples = [
 ];
 
 const p7Tail = [Promise.resolve(true), "false", false];
-const promiseAllTest7 = PromiseAll([1, Promise.resolve(2), ...p7Tail]);
+const promiseAllTest7 = PromiseAllStrict([1, Promise.resolve(2), ...p7Tail]);
 
 const p8Init = [Promise.resolve(1), [true, false], Promise.resolve(3)];
-const promiseAllTest8 = PromiseAll([...p8Init, "four", Promise.resolve("five")]);
+const promiseAllTest8 = PromiseAllStrict([...p8Init, "four", Promise.resolve("five")]);
 
 const p9Mid = [Promise.resolve(true), { 5: "five" }, Promise.resolve({ p: false })];
-const promiseAllTest9 = PromiseAll([
+const promiseAllTest9 = PromiseAllStrict([
     Promise.resolve(1), "two", Promise.resolve(3),
     ...p9Mid,
     Promise.resolve(Symbol("seven")), () => {}, Symbol("nine"),
