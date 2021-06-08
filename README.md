@@ -47,7 +47,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 1042 IsNever  
 1097 IsUnion  
 1130 ReplaceKeys  
-1367 Remove Index Signature  
+[1367 Remove Index Signature](./src/objects/remove-index-signature.ts)  
 
 ### Hard
 6 Simple Vue  
