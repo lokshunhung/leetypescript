@@ -22,7 +22,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [8 Readonly 2](./src/objects/readonly-pick.ts)  
 [9 Deep Readonly](./src/objects/deep-readonly.ts)  
 [10 Tuple to Union](./src/arrays/tuple-to-union.ts)  
-12 Chainable Options  
+[12 Chainable Options](./src/objects/chainable-options.ts)  
 [15 Last of Array](./src/arrays/last-of-array-barebones.ts)  
 16 Pop  
 20 Promise.all  
