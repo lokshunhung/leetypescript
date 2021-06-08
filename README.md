@@ -22,17 +22,17 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [8 Readonly 2](./src/objects/readonly-pick.ts)  
 [9 Deep Readonly](./src/objects/deep-readonly.ts)  
 [10 Tuple to Union](./src/arrays/tuple-to-union.ts)  
-[12 Chainable Options](./src/objects/chainable-options.ts)  
+[12 Chainable Options](./src/functions/chainable-options.ts)  
 [15 Last of Array](./src/arrays/last-of-array-barebones.ts)  
 [16 Pop](./src/arrays/pop.ts)  
-[20 Promise.all](./src/arrays/promise-all-barebones.ts)
+[20 Promise.all](./src/functions/promise-all-barebones.ts)
 [62 Type Lookup](./src/objects/type-lookup.ts)  
 106 Trim Left (merged to Custom/Strings/Trim)  
 108 Trim (merged to Custom/Strings/Trim)  
 110 Capitalize  
 [116 Replace](./src/strings/replace-once.ts)  
 [119 ReplaceAll](./src/strings/replace-all.ts)  
-[191 Append Argument](./src/arrays/append-argument.ts)  
+[191 Append Argument](./src/functions/append-argument.ts)  
 296 Permutation  
 [298 Length of String](./src/strings/length-of-string.ts)  
 459 Flatten  
@@ -94,11 +94,13 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 ### Arrays
 [First of array strict](./src/arrays/first-of-array-strict.ts)  
 [Last of array strict](./src/arrays/last-of-array-strict.ts)  
-[Promise.all strict](./src/arrays/promise-all-strict.ts)
 [Reverse](./src/arrays/reverse.ts)  
 
 ### Basics
 [Writable](./src/basics/writable.ts)  
+
+### Functions
+[Promise.all strict](./src/functions/promise-all-strict.ts)  
 
 ### Maths
 [Add strings](./src/maths/add-strings.ts)  
