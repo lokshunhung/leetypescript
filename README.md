@@ -76,7 +76,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 1383 Camlize  
 
 ### Extreme
-5 Get Readonly Keys  
+[5 Get Readonly Keys](./src/objects/get-readonly-keys.ts)  
 151 Query String Parser  
 216 Slice  
 274 Integers Comparator  
