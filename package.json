@@ -8,7 +8,7 @@
     },
     "devDependencies": {
         "@type-challenges/utils": "0.1.1",
-        "typescript": "4.2.4"
+        "typescript": "4.3.2"
     },
     "prettier": {
         "tabWidth": 4,
