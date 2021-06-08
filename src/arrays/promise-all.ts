@@ -1,5 +1,7 @@
 // https://github.com/type-challenges/type-challenges/blob/84360326c02461ae63b55c6d396ad1679917c430/questions/20-medium-promise-all/README.md
 
+type PromiseOr<E> = E | Promise<E>
+
 type AwaitAll<T extends any[]> =
     T extends [infer Head, ...infer Tail]
         ? Head extends Promise<infer R>
@@ -11,7 +13,7 @@ type AwaitAll<T extends any[]> =
                 : [...AwaitAll<Init>, Last]
             : T extends []
                 ? T
-                : T extends Array<Promise<infer E>>
+                : T extends Array<PromiseOr<infer E>>
                     ? Array<E>
                     : T
 ;
