@@ -5,8 +5,8 @@ export {};
 
 type TestCases = [
     Expect<Equal<
-        TupleToUnion<[123, '456', true]>,
-        123 | '456' | true
+        TupleToUnion<[123, "456", true]>,
+        123 | "456" | true
     >>,
 
     Expect<Equal<
