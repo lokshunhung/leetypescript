@@ -55,7 +55,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 55 Union to Intersection  
 57 Get Required  
 59 Get Optional  
-89 Required Keys  
+[89 Required Keys](./src/objects/get-required-keys.ts)  
 [90 Optional Keys](./src/objects/get-optional-keys.ts)  
 112 Capitalize Words  
 114 CamelCase  
