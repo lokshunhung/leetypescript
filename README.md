@@ -26,7 +26,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [15 Last of Array](./src/arrays/last-of-array-barebones.ts)  
 [16 Pop](./src/arrays/pop.ts)  
 [20 Promise.all](./src/arrays/promise-all.ts)  
-62 Type Lookup  
+[62 Type Lookup](./src/objects/type-lookup.ts)  
 106 Trim Left (merged to Custom/Strings/Trim)  
 108 Trim (merged to Custom/Strings/Trim)  
 110 Capitalize  
