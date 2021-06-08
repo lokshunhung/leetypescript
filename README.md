@@ -56,7 +56,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 57 Get Required  
 59 Get Optional  
 89 Required Keys  
-90 Optional Keys  
+[90 Optional Keys](./src/objects/get-optional-keys.ts)  
 112 Capitalize Words  
 114 CamelCase  
 147 C-printf Parser  
