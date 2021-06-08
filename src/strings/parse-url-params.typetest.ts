@@ -1,5 +1,5 @@
 import { Equal, Expect, NotEqual } from "@type-challenges/utils";
-import { ParseQueryParams, URLQueryParams } from "./url-query-params";
+import { ParseURLParams, URLParamsRecord } from "./parse-url-params";
 
 export {};
 
@@ -8,48 +8,48 @@ type KMBURL = "https://data.etabus.gov.hk/v1/transport/kmb/route/{route}/{direct
 
 type TestParseQueryParams = [
     Expect<Equal<
-        ParseQueryParams<PokemonURL>,
+        ParseURLParams<PokemonURL>,
         ["gameGeneration", "pokemonId"]
     >>,
 
     Expect<Equal<
-        ParseQueryParams<KMBURL>,
+        ParseURLParams<KMBURL>,
         ["route", "direction", "service_type"]
     >>,
 ];
 
 type TestParseQueryParams_OrderNotPreserved = [
     Expect<NotEqual<
-        ParseQueryParams<PokemonURL>,
+        ParseURLParams<PokemonURL>,
         ["pokemonId", "gameGeneration"]
     >>,
 
     Expect<NotEqual<
-        ParseQueryParams<KMBURL>,
+        ParseURLParams<KMBURL>,
         ["service_type", "direction", "route"]
     >>,
 ];
 
 type TestURLQueryParams = [
     Expect<Equal<
-        URLQueryParams<PokemonURL>,
+        URLParamsRecord<PokemonURL>,
         { gameGeneration: string; pokemonId: string }
     >>,
 
     Expect<Equal<
-        URLQueryParams<KMBURL>,
+        URLParamsRecord<KMBURL>,
         { route: string; direction: string; service_type: string }
     >>,
 ];
 
 type TestURLQueryParams_UnmatchedProperties = [
     Expect<NotEqual<
-        URLQueryParams<PokemonURL>,
+        URLParamsRecord<PokemonURL>,
         { gameGeneration: string; pokemonId: string; extraProp: string }
     >>,
 
     Expect<NotEqual<
-        URLQueryParams<KMBURL>,
+        URLParamsRecord<KMBURL>,
         { route: string }
     >>,
 ];
