@@ -20,7 +20,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [2 Get Return Type](./src/basics/return-type.ts)  
 [3 Omit](./src/basics/omit.ts)  
 [8 Readonly 2](./src/objects/readonly-pick.ts)  
-9 Deep Readonly  
+[9 Deep Readonly](./src/objects/deep-readonly.ts)  
 [10 Tuple to Union](./src/arrays/tuple-to-union.ts)  
 12 Chainable Options  
 15 Last of Array  
