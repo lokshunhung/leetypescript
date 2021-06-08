@@ -77,7 +77,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 
 ### Extreme
 [5 Get Readonly Keys](./src/objects/get-readonly-keys.ts)  
-151 Query String Parser  
+[151 Query String Parser](./src/strings/parse-query-string.ts)  
 216 Slice  
 274 Integers Comparator  
 462 Currying 2  
