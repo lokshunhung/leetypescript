@@ -19,7 +19,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 ### Medium
 [2 Get Return Type](./src/basics/return-type.ts)  
 [3 Omit](./src/basics/omit.ts)  
-8 Readonly 2  
+[8 Readonly 2](./src/basics/readonly-2.ts)  
 9 Deep Readonly  
 [10 Tuple to Union](./src/arrays/tuple-to-union.ts)  
 12 Chainable Options  
