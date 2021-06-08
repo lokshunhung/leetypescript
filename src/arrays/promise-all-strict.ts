@@ -1,5 +1,3 @@
-// https://github.com/type-challenges/type-challenges/blob/84360326c02461ae63b55c6d396ad1679917c430/questions/20-medium-promise-all/README.md
-
 type PromiseOr<E> = E | Promise<E>
 
 type AwaitAll<T extends any[]> =
