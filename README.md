@@ -8,7 +8,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [4 Pick](./src/basics/pick.ts)  
 [7 Readonly](./src/basics/readonly.ts)  
 [11 Tuple to Object](./src/arrays/tuple-to-object.ts)  
-14 First of Array  
+[14 First of Array](./src/arrays/first-of-array-barebones.ts)  
 [18 Length of Tuple](./src/arrays/length-of-tuples.ts)  
 [43 Exclude](./src/basics/exclude.ts)  
 [189 Awaited](./src/basics/awaited.ts)  
