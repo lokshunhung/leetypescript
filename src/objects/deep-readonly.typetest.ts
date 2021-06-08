@@ -42,4 +42,29 @@ type TestCases = [
         DeepReadonly<X>,
         Expected
     >>,
+    Expect<Equal<
+        DeepReadonly<{
+            foo: string[];
+            bar: {
+                food: [number, boolean];
+                bard: string;
+            };
+        }>,
+        {
+            readonly foo: readonly string[];
+            readonly bar: {
+                readonly food: readonly [number, boolean];
+                readonly bard: string;
+            };
+        }
+    >>,
+
+    Expect<Equal<
+        DeepReadonly<string[]>,
+        readonly string[]
+    >>,
+    Expect<Equal<
+        DeepReadonly<[number, () => void, { a: string; b: number }]>,
+        readonly [number, () => void, { readonly a: string; readonly b: number }]
+    >>,
 ];
