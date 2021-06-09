@@ -71,7 +71,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 <!-- 651 Length of String 2   -->
 <!-- 730 Union to Tuple   -->
 <!-- 847 String Join   -->
-<!-- 956 DeepPick   -->
+[956 DeepPick](./src/objects/deep-pick.ts)  
 <!-- 1290 Pinia   -->
 <!-- 1383 Camelize   -->
 
