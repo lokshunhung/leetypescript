@@ -62,7 +62,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 <!-- 147 C-printf Parser   -->
 <!-- 213 Vue Basic Props   -->
 <!-- 223 IsAny   -->
-<!-- 270 Typed Get   -->
+[270 Typed Get](./src/objects/typed-get.ts)  
 <!-- 300 String to Number   -->
 <!-- 399 Tuple Filter   -->
 <!-- 472 Tuple to Enum Object   -->
