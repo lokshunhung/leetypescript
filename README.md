@@ -70,7 +70,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 <!-- 553 Deep object to unique   -->
 <!-- 651 Length of String 2   -->
 <!-- 730 Union to Tuple   -->
-<!-- 847 String Join   -->
+[847 String Join](./src/strings/join.ts)  
 [956 DeepPick](./src/objects/deep-pick.ts)  
 <!-- 1290 Pinia   -->
 <!-- 1383 Camelize   -->
