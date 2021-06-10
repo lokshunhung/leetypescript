@@ -68,7 +68,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 <!-- 472 Tuple to Enum Object   -->
 <!-- 545 printf   -->
 <!-- 553 Deep object to unique   -->
-<!-- 651 Length of String 2   -->
+[651 Length of String 2](./src/strings/length-of-string-2.ts)  
 <!-- 730 Union to Tuple   -->
 [847 String Join](./src/strings/join.ts)  
 [956 DeepPick](./src/objects/deep-pick.ts)  
