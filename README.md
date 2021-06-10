@@ -35,7 +35,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [191 Append Argument](./src/functions/append-argument.ts)  
 <!-- 296 Permutation   -->
 [298 Length of String](./src/strings/length-of-string.ts)  
-<!-- 459 Flatten   -->
+[459 Flatten](./src/arrays/flatten.ts)  
 <!-- 527 Append to object   -->
 <!-- 529 Absolute   -->
 [531 String to Union](./src/strings/string-to-union.ts)  
