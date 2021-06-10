@@ -109,5 +109,6 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 ### Strings
 [Find duplicate strings](./src/strings/find-duplicated-strings.ts)  
 [Is snake case](./src/strings/is-snake-case.ts)  
-[Trim](./src/strings/trim.ts)  
 [Parse URL params](./src/strings/parse-url-params.ts)  
+[Reverse string](./src/strings/reverse-string.ts)  
+[Trim](./src/strings/trim.ts)  
