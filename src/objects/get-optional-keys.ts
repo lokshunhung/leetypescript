@@ -9,3 +9,16 @@ export type GetOptionalKeys<T> =
         ;
     }[keyof T]
 ;
+
+/*
+Alternative implementation
+export type GetOptionalKeys<T> =
+    keyof T extends infer K // declare `K`
+        ? K extends keyof T // loop over each element of `K` by distributing `K` (https://www.typescriptlang.org/docs/handbook/advanced-types.html#distributive-conditional-types)
+            ? Pick<T, K> extends { [_ in K]: T[K] }
+                ? never
+                : K
+            : never
+        : never
+;
+*/
