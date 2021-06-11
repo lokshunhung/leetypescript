@@ -65,7 +65,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [270 Typed Get](./src/objects/typed-get.ts)  
 <!-- 300 String to Number   -->
 <!-- 399 Tuple Filter   -->
-<!-- 472 Tuple to Enum Object   -->
+[472 Tuple to Enum Object](./src/objects/tuple-to-enum-object.ts)  
 <!-- 545 printf   -->
 <!-- 553 Deep object to unique   -->
 [651 Length of String 2](./src/strings/length-of-string-2.ts)  
