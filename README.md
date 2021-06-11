@@ -106,6 +106,9 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [Add strings](./src/maths/add-strings.ts)  
 [Subtract strings](./src/maths/subtract-strings.ts)  
 
+### Objects
+[Union to intersection](./src/objects/union-to-intersection.ts)
+
 ### Strings
 [Find duplicate strings](./src/strings/find-duplicated-strings.ts)  
 [Is snake case](./src/strings/is-snake-case.ts)  
