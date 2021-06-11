@@ -94,4 +94,10 @@ type TestCases = [
         ParseQueryString<"k2=v2&k1&k1&k2=v3">,
         { k1: true; k2: ["v2", "v3"] }
     >>,
+
+    // Additional tests (https://github.com/Jamyth/Jed-Type-Challenge/blob/c2de4646e42ddd7cab46a81a285d74b9177bfd7f/src/extreme/QueryStringParser.ts)
+    Expect<Equal<
+        ParseQueryString<"k1=v1&k1=v1&k1=v2">,
+        { k1: ["v1", "v2"] }
+    >>,
 ];
