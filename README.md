@@ -39,7 +39,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [298 Length of String](./src/strings/length-of-string.ts)  
 [459 Flatten](./src/arrays/flatten.ts)  
 [527 Append to object](./src/objects/append-to-object.ts)  
-<!-- 529 Absolute   -->
+[529 Absolute](./src/strings/absolute.ts)  
 [531 String to Union](./src/strings/string-to-union.ts)  
 <!-- 599 Merge   -->
 <!-- 610 CamelCase   -->
