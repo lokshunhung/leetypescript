@@ -15,6 +15,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [268 If](./src/basics/if.ts)  
 [533 Concat](./src/arrays/concat.ts)  
 [898 Includes](./src/arrays/includes.ts)  
+[3057 Push](./src/arrays/push.ts)  
 
 ### Medium
 [2 Get Return Type](./src/basics/return-type.ts)  
