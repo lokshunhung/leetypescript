@@ -31,7 +31,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [62 Type Lookup](./src/objects/type-lookup.ts)  
 106 Trim Left (merged to Custom/Strings/Trim)  
 108 Trim (merged to Custom/Strings/Trim)  
-<!-- 110 Capitalize   -->
+[110 Capitalize](./src/strings/capitalize.ts)  
 [116 Replace](./src/strings/replace-once.ts)  
 [119 ReplaceAll](./src/strings/replace-all.ts)  
 [191 Append Argument](./src/functions/append-argument.ts)  
