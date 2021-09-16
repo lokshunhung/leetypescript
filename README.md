@@ -16,6 +16,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 [533 Concat](./src/arrays/concat.ts)  
 [898 Includes](./src/arrays/includes.ts)  
 [3057 Push](./src/arrays/push.ts)  
+[3060 Unshift](./src/arrays/unshift.ts)  
 
 ### Medium
 [2 Get Return Type](./src/basics/return-type.ts)  
