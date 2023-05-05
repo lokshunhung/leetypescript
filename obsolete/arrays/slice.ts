@@ -1,5 +1,8 @@
 // https://github.com/type-challenges/type-challenges/blob/84360326c02461ae63b55c6d396ad1679917c430/questions/216-extreme-slice/README.md
 
+// Note: Last known to work on TS 4.3.2
+// https://github.com/type-challenges/type-challenges/issues/1757#issuecomment-1238929715
+
 type SliceImpl<
     Arr extends any[],
     Start extends number = 0,

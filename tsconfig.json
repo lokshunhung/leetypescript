@@ -8,5 +8,8 @@
         "isolatedModules": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true
-    }
+    },
+    "include": [
+        "./src"
+    ]
 }
