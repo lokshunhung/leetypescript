@@ -96,6 +96,7 @@ For documenting my personal practices on problems of TypeScript type system ~~co
 ### Arrays
 [First of array strict](./src/arrays/first-of-array-strict.ts)  
 [Last of array strict](./src/arrays/last-of-array-strict.ts)  
+[Power set](./src/arrays/powerset.ts)
 [Reverse](./src/arrays/reverse.ts)  
 
 ### Basics
